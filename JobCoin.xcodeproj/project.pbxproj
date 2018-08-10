@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F8E38ED6211CBD3A004DC2A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38ED5211CBD3A004DC2A8 /* AppDelegate.swift */; };
-		F8E38ED8211CBD3A004DC2A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38ED7211CBD3A004DC2A8 /* ViewController.swift */; };
+		F8E38ED8211CBD3A004DC2A8 /* LoginViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38ED7211CBD3A004DC2A8 /* LoginViewControllerViewController.swift */; };
 		F8E38EDB211CBD3A004DC2A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E38ED9211CBD3A004DC2A8 /* Main.storyboard */; };
 		F8E38EDD211CBD3D004DC2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E38EDC211CBD3D004DC2A8 /* Assets.xcassets */; };
 		F8E38EE0211CBD3D004DC2A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E38EDE211CBD3D004DC2A8 /* LaunchScreen.storyboard */; };
 		F8E38EEB211CBD3D004DC2A8 /* JobCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38EEA211CBD3D004DC2A8 /* JobCoinTests.swift */; };
 		F8E38EF6211CBD3D004DC2A8 /* JobCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38EF5211CBD3D004DC2A8 /* JobCoinUITests.swift */; };
+		F8E38F04211CBDCC004DC2A8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F03211CBDCC004DC2A8 /* Color.swift */; };
+		F8E38F06211CBE96004DC2A8 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F05211CBE96004DC2A8 /* PortalViewController.swift */; };
+		F8E38F08211CBF14004DC2A8 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F07211CBF14004DC2A8 /* Networker.swift */; };
+		F8E38F0A211CC211004DC2A8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F09211CC211004DC2A8 /* Transaction.swift */; };
+		F8E38F0C211CC2C1004DC2A8 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F0B211CC2C1004DC2A8 /* UserProfile.swift */; };
+		F8E38F10211CC763004DC2A8 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F0F211CC763004DC2A8 /* LocalizableStrings.swift */; };
+		F8E38F13211E2F0D004DC2A8 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F12211E2F0D004DC2A8 /* TransactionCell.swift */; };
+		F8E38F15211E3540004DC2A8 /* TransactionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E38F14211E3540004DC2A8 /* TransactionTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,7 @@
 /* Begin PBXFileReference section */
 		F8E38ED2211CBD3A004DC2A8 /* JobCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E38ED5211CBD3A004DC2A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8E38ED7211CBD3A004DC2A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8E38ED7211CBD3A004DC2A8 /* LoginViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerViewController.swift; sourceTree = "<group>"; };
 		F8E38EDA211CBD3A004DC2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8E38EDC211CBD3D004DC2A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8E38EDF211CBD3D004DC2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,14 @@
 		F8E38EF1211CBD3D004DC2A8 /* JobCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E38EF5211CBD3D004DC2A8 /* JobCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCoinUITests.swift; sourceTree = "<group>"; };
 		F8E38EF7211CBD3D004DC2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E38F03211CBDCC004DC2A8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F8E38F05211CBE96004DC2A8 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
+		F8E38F07211CBF14004DC2A8 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		F8E38F09211CC211004DC2A8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		F8E38F0B211CC2C1004DC2A8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		F8E38F0F211CC763004DC2A8 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		F8E38F12211E2F0D004DC2A8 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		F8E38F14211E3540004DC2A8 /* TransactionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				F8E38ED5211CBD3A004DC2A8 /* AppDelegate.swift */,
-				F8E38ED7211CBD3A004DC2A8 /* ViewController.swift */,
+				F8E38F07211CBF14004DC2A8 /* Networker.swift */,
+				F8E38F0E211CC3DB004DC2A8 /* ViewControllers */,
+				F8E38F16211E3879004DC2A8 /* TransactionTableView */,
+				F8E38F0D211CC3CD004DC2A8 /* Models */,
+				F8E38F11211CC76C004DC2A8 /* Constants */,
 				F8E38ED9211CBD3A004DC2A8 /* Main.storyboard */,
 				F8E38EDC211CBD3D004DC2A8 /* Assets.xcassets */,
 				F8E38EDE211CBD3D004DC2A8 /* LaunchScreen.storyboard */,
@@ -123,6 +143,42 @@
 				F8E38EF7211CBD3D004DC2A8 /* Info.plist */,
 			);
 			path = JobCoinUITests;
+			sourceTree = "<group>";
+		};
+		F8E38F0D211CC3CD004DC2A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8E38F09211CC211004DC2A8 /* Transaction.swift */,
+				F8E38F0B211CC2C1004DC2A8 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8E38F0E211CC3DB004DC2A8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8E38ED7211CBD3A004DC2A8 /* LoginViewControllerViewController.swift */,
+				F8E38F05211CBE96004DC2A8 /* PortalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8E38F11211CC76C004DC2A8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F8E38F03211CBDCC004DC2A8 /* Color.swift */,
+				F8E38F0F211CC763004DC2A8 /* LocalizableStrings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F8E38F16211E3879004DC2A8 /* TransactionTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F8E38F12211E2F0D004DC2A8 /* TransactionCell.swift */,
+				F8E38F14211E3540004DC2A8 /* TransactionTableView.swift */,
+			);
+			path = TransactionTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8E38ED8211CBD3A004DC2A8 /* ViewController.swift in Sources */,
+				F8E38F15211E3540004DC2A8 /* TransactionTableView.swift in Sources */,
+				F8E38F08211CBF14004DC2A8 /* Networker.swift in Sources */,
+				F8E38F06211CBE96004DC2A8 /* PortalViewController.swift in Sources */,
+				F8E38F0C211CC2C1004DC2A8 /* UserProfile.swift in Sources */,
+				F8E38F0A211CC211004DC2A8 /* Transaction.swift in Sources */,
+				F8E38ED8211CBD3A004DC2A8 /* LoginViewControllerViewController.swift in Sources */,
+				F8E38F13211E2F0D004DC2A8 /* TransactionCell.swift in Sources */,
 				F8E38ED6211CBD3A004DC2A8 /* AppDelegate.swift in Sources */,
+				F8E38F04211CBDCC004DC2A8 /* Color.swift in Sources */,
+				F8E38F10211CC763004DC2A8 /* LocalizableStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
