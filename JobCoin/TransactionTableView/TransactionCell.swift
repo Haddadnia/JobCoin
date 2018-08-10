@@ -3,7 +3,7 @@ import UIKit
 
 class TransactionCell: UITableViewCell {
 
-    let timeStampLabel = makeLabel()
+    let balanceLabel = makeLabel()
     let addressLabel = makeLabel()
     let amountLabel = makeLabel()
 
@@ -16,16 +16,16 @@ class TransactionCell: UITableViewCell {
     }
 
     func addSubviews() {
-        contentView.addSubview(timeStampLabel)
+        contentView.addSubview(balanceLabel)
         contentView.addSubview(addressLabel)
         contentView.addSubview(amountLabel)
 
         addressLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8).isActive = true
-        timeStampLabel.topAnchor.constraint(equalTo: addressLabel.bottomAnchor, constant: 4).isActive = true
+        balanceLabel.topAnchor.constraint(equalTo: addressLabel.bottomAnchor, constant: 4).isActive = true
         addressLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
-        timeStampLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
+        balanceLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         addressLabel.trailingAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        timeStampLabel.trailingAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        balanceLabel.trailingAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
 
         amountLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
         amountLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true

@@ -38,8 +38,7 @@ extension TransactionTableView: UITableViewDataSource {
         let transaction = transactions[indexPath.row]
         if let cell = dequeueReusableCell(withIdentifier: TRANSACTION_CELL) as? TransactionCell {
             cell.amountLabel.text = transaction.amount
-            // Could use a date formatter to make this a pretty date, will leave it out so as not to clutter the view
-//            cell.timeStampLabel.text = transaction.timeStamp
+            cell.balanceLabel.text = transaction.balance != nil ? "Balance: " + transaction.balance! : nil
             cell.addressLabel.text = (transaction.fromAddress ?? "(GEN)") + " > " + transaction.toAddress
             return cell
         } else {

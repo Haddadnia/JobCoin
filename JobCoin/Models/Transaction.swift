@@ -5,6 +5,7 @@ public struct Transaction {
     let toAddress: String
     let fromAddress: String?
     let amount: String
+    var balance: String?
 
     public init?(dictionary: JSONDictionary) {
         guard let timeStamp = dictionary["timestamp"] as? String,
@@ -19,5 +20,6 @@ public struct Transaction {
         self.toAddress = toAddress
         self.fromAddress = fromAddress
         self.amount = amount
+        self.balance = nil
     }
 }

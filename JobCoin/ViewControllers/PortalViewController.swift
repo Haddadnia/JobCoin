@@ -4,6 +4,7 @@ import UIKit
 class PortalViewController: UIViewController {
 
     let address: String
+    var userProfile: UserProfile?
     var tableView = TransactionTableView(transactions: [])
 
     // MARK: - Initializers
@@ -12,6 +13,7 @@ class PortalViewController: UIViewController {
         self.address = address
         super.init(nibName: nil, bundle: nil)
         title = address
+        self.userProfile = profile
         display(profile: profile)
         getTransactions()
         setupSubviews()
@@ -24,17 +26,32 @@ class PortalViewController: UIViewController {
 
     func getTransactions() {
         Networker.getTransactions { [weak self] (transactionsArray, error) in
-            guard let transactions = transactionsArray else {
-                return
+            guard let transactionsArray = transactionsArray,
+                let stringBalance = self?.userProfile?.balance else {
+                    assertionFailure("you have no profile balance || you have no transactions array")
+                    return
             }
-            let userSpecificTransactions = transactions.filter({ $0.toAddress == self?.address || $0.fromAddress == self?.address })
-            self?.tableView.transactions = userSpecificTransactions
+            let userSpecificTransactions = Array(transactionsArray.filter({ $0.toAddress == self?.address || $0.fromAddress == self?.address }).reversed())
+
+            var runningBalance = Double(stringBalance)!
+            var transactions = [Transaction]()
+            for var transaction in userSpecificTransactions {
+                transaction.balance = String(format: "%f", runningBalance)
+                if transaction.fromAddress == self?.address {
+                    runningBalance = runningBalance + Double(transaction.amount)!
+                } else {
+                    runningBalance = runningBalance - Double(transaction.amount)!
+                }
+                transactions.append(transaction)
+            }
+            self?.tableView.transactions = transactions
         }
     }
     func updateProfile(_ user: String? = nil) {
         Networker.getAddress(user ?? address, completion: { [weak self] profile, error in
             if let profile = profile {
                 self?.display(profile: profile)
+                self?.userProfile = profile
             } else {
                 // DISPLAY ERROR
                 self?.addressEntryTextField.text = "ERROR"
